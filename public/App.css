@@ -310,3 +310,9 @@
   font-size: 40px;
   z-index: 5;
 }
+
+.fallingstar {
+  position: fixed;
+  top: 0%;
+  right: 0;
+}

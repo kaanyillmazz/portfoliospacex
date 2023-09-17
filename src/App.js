@@ -1,11 +1,7 @@
-import {useNavigate} from 'react-router-dom';
 import {Button} from "@mui/joy";
-import {useEffect, useState} from "react";
 
 
 function App() {
-
-    const navigate = useNavigate();
 
     function handleAboutMe() {
         document.getElementById("moon1").classList.remove("moon1");
@@ -87,6 +83,7 @@ function App() {
             <div id="profilePic" className="profilePic displayNone">
                 <img className="profilePic" src="https://i.imgur.com/aOmiDeB.png" alt="user profile"/>
             </div>
+            <img className="fallingstar" src="https://i.imgur.com/2mJGMAX.gif" alt="star"/>
 
             <div id="contactsHolder" className="contactsHolder opacityZero transition">
                 <div className="socialButtons">
