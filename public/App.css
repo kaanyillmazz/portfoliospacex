@@ -269,14 +269,6 @@
   opacity: 0;
 }
 
-.starsBackground2 {
-  background: url("/assets/images/Green_Nebula_08.png");
-  background-size: 512px;
-  height: 100vh;
-  width: 100vw;
-  background-repeat: repeat;
-
-}
 
 
 .socialButtons {
@@ -287,17 +279,9 @@
 .contactsHolder {
   position: fixed;
   top: 55%;
-  left: 42%;
+  left: 39%;
 }
 
-.starsBackground1 {
-  background: url("/assets/images/Green_Nebula_02.png");
-  background-size: 512px;
-  height: 100vh;
-  width: 100vw;
-  background-repeat: repeat;
-
-}
 
 .about-me-header {
   position: fixed;
