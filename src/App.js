@@ -230,7 +230,7 @@ function App() {
 
             <object id="resumePDF" className="resumePDF"
                     data="https://drive.google.com/file/d/14yqH8EIEAFAlhCS4bJJA17P_R5xm_bth/preview"
-                    type="application/pdf"></object>
+                    type="application/pdf">Resume PDF</object>
 
 
             <img id="fallingstar9" className="fallingstar9 transition3"
