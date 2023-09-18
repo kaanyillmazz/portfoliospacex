@@ -5,6 +5,10 @@
 
 }
 
+body{
+    cursor: url("https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/cursor1_small.png"), auto
+}
+
 .resumePDF {
     transition: all 1.5s;
     display: none;

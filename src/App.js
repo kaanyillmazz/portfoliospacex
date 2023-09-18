@@ -222,7 +222,7 @@ function App() {
     }
 
     return (
-        <div className="Main">
+        <div  className="Main">
             <div id="profilePic" className="profilePic displayNone">
                 <img className="profilePic" src="https://i.imgur.com/aOmiDeB.png" alt="user profile"/>
             </div>
@@ -308,7 +308,7 @@ function App() {
                 <label className="kaanyilmaz">Kaan YILMAZ</label>
             </div>
 
-            <div className="starsBackground"></div>
+            <div   className="starsBackground"></div>
 
             <div className="row">
                 <div className="col-md-12">
