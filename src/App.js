@@ -75,8 +75,6 @@ function App() {
 
     }
 
-    let r = document.querySelector(':root');
-
     function AboutMeStarHover() {
 
         window.requestAnimationFrame(function () {
