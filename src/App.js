@@ -182,7 +182,7 @@ function App() {
             document.getElementById("fallingstar18").setAttribute("style", "display:fixed; top: 50%; right: 15%;rotate: 0deg");
             document.getElementById("fallingstar14").setAttribute("style", "display:fixed;top: 15%; right: 15%;rotate: 0deg");
             document.getElementById("fallingstar1").setAttribute("style", "display:fixed;top: 5%; right: 20%;rotate: 0deg");
-            document.getElementById("fallingstar8").setAttribute("style", "display:fixed;top: 38%; right: 49%;rotate: 0deg");
+            document.getElementById("fallingstar8").setAttribute("style", "display:fixed;top: 38%; right: 70%;rotate: 0deg");
             document.getElementById("fallingstar18").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-400-t.gif");
             document.getElementById("fallingstar14").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-300-t.gif");
             document.getElementById("fallingstar1").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-200-t.gif");
@@ -268,7 +268,7 @@ function App() {
             </div>
 
 
-            <div id="kaanyilmaz" className="kaanyilmaz transition">
+            <div id="kaanyilmaz" className="kaanyilmaz transition3">
                 <label className="kaanyilmaz">Kaan YILMAZ</label>
             </div>
 

@@ -301,9 +301,11 @@
     color: aliceblue;
     font-size: 100px;
     position: fixed;
-    top: 40%;
-    left: 35%;
+    top: 37%;
+    left: 32%;
     opacity: 90%;
+    filter: drop-shadow(0px 0px 50px whitesmoke);
+    width: 500px;
 }
 
 .opacityZero {
@@ -411,7 +413,7 @@
 .fallingstar8 {
     position: fixed;
     top: 38%;
-    right: 49%;
+    right: 70%;
 
 }
 
@@ -482,6 +484,5 @@
     position: fixed;
     top: 50%;
     right: 15%;
-
 }
 
