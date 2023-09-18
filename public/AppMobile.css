@@ -314,3 +314,138 @@
     font-size: 20px;
     overflow: scroll;
 }
+
+.fallingstar {
+    position: fixed;
+    top: 40%;
+    right: 35%;
+    display: none;
+
+}
+
+.fallingstar1 {
+    position: fixed;
+    top: 5%;
+    right: 20%;
+    rotate: 0deg;
+    display: none;
+}
+
+.fallingstar2 {
+    position: fixed;
+    top: 80%;
+    right: 48%;
+    display: none;
+}
+
+.fallingstar3 {
+    position: fixed;
+    top: 90%;
+    right: 58%;
+    display: none;
+}
+
+.fallingstar4 {
+    position: fixed;
+    top: 70%;
+    right: 80%;
+    display: none;
+}
+
+.fallingstar5 {
+    position: fixed;
+    top: 37%;
+    right: 63%;
+    display: none;
+}
+
+.fallingstar6 {
+    position: fixed;
+    top: 48%;
+    right: 40%;
+    display: none;
+}
+
+.fallingstar7 {
+    position: fixed;
+    top: 81%;
+    right: 33%;
+    display: none;
+}
+
+.fallingstar8 {
+    position: fixed;
+    top: 38%;
+    right: 49%;
+    display: none;
+}
+
+.fallingstar9 {
+    position: fixed;
+    top: 7%;
+    right: 29%;
+    display: none;
+}
+
+.fallingstar10 {
+    position: fixed;
+    top: 0%;
+    right: 48%;
+    display: none;
+}
+
+.fallingstar11 {
+    position: fixed;
+    top: 13%;
+    right: 90%;
+    display: none;
+}
+
+.fallingstar12 {
+    position: fixed;
+    top: 78%;
+    right: 61%;
+    display: none;
+}
+
+.fallingstar13 {
+    position: fixed;
+    top: 31%;
+    right: 69%;
+    display: none;
+}
+
+.fallingstar14 {
+    position: fixed;
+    top: 15%;
+    right: 15%;
+    display: none;
+}
+
+.fallingstar15 {
+    position: fixed;
+    top: 22%;
+    right: 100%;
+    display: none;
+}
+
+.fallingstar16 {
+    position: fixed;
+    top: 70%;
+    right: 90%;
+    display: none;
+}
+
+.fallingstar17 {
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    display: none;
+}
+
+.fallingstar18 {
+    position: fixed;
+    top: 50%;
+    right: 15%;
+    display: none;
+}
