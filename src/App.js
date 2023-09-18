@@ -1,9 +1,36 @@
 import {Button} from "@mui/joy";
+import {useState} from "react";
 
 
 function App() {
 
+    const [resumeOpen, setResumeOpen] = useState(false);
+    function handleResume() {
+        if(!resumeOpen) {
+            document.getElementById("resumePDF").setAttribute("style", "display: block");
+            setResumeOpen(!resumeOpen);
+        } else {
+            document.getElementById("resumePDF").setAttribute("style", "display: none");
+            setResumeOpen(!resumeOpen);
+        }
+
+
+        document.getElementById("kaanyilmaz").classList.add("opacityZero");
+
+        document.getElementById("contactsHolder").classList.add("opacityZero");
+
+        document.getElementById("about-me-body").classList.add("animate-fadein");
+        document.getElementById("about-me-body").classList.remove("displayBlock");
+        document.getElementById("about-me-body").classList.add("displayNone");
+
+        document.getElementById("profilePic").classList.add("animate-fadein");
+        document.getElementById("profilePic").classList.remove("displayBlock");
+        document.getElementById("profilePic").classList.add("displayNone");
+    }
+
     function handleAboutMe() {
+        document.getElementById("resumePDF").setAttribute("style", "display: none");
+        setResumeOpen(false);
         document.getElementById("moon1").classList.remove("moon1");
         document.getElementById("moon1").classList.add("moon1-displacement");
         document.getElementById("moon1").classList.add("animate-spin");
@@ -40,6 +67,8 @@ function App() {
 
 
     function handleContactMe() {
+        document.getElementById("resumePDF").setAttribute("style", "display: none");
+        setResumeOpen(false);
         document.getElementById("moon1").classList.remove("moon1");
         document.getElementById("moon1").classList.add("moon1-displacement");
         document.getElementById("moon1").classList.add("animate-spin");
@@ -196,6 +225,10 @@ function App() {
             <div id="profilePic" className="profilePic displayNone">
                 <img className="profilePic" src="https://i.imgur.com/aOmiDeB.png" alt="user profile"/>
             </div>
+
+
+            <object id="resumePDF" className="resumePDF" data="https://drive.google.com/file/d/14yqH8EIEAFAlhCS4bJJA17P_R5xm_bth/preview" type="application/pdf">   </object>
+
 
             <img id="fallingstar9" className="fallingstar9 transition3"
                  src="https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-750-t.gif"
@@ -371,7 +404,7 @@ function App() {
                     }} onMouseLeave={() => {
                         ResumeStarLeave();
                     }} onClick={() => {
-                        window.open("https://drive.google.com/file/d/14yqH8EIEAFAlhCS4bJJA17P_R5xm_bth/view?usp=sharing")
+                        handleResume();
                     }} src="https://i.imgur.com/nf18N0a.png" alt="moon"/>
                 </div>
                 <label id="moon3-header" className="moon3-header">Resume</label>
