@@ -5,8 +5,9 @@ import {useState} from "react";
 function App() {
 
     const [resumeOpen, setResumeOpen] = useState(false);
+
     function handleResume() {
-        if(!resumeOpen) {
+        if (!resumeOpen) {
             document.getElementById("resumePDF").setAttribute("style", "display: block");
             setResumeOpen(!resumeOpen);
         } else {
@@ -106,28 +107,28 @@ function App() {
 
     function AboutMeStarHover() {
         window.requestAnimationFrame(function () {
-            document.getElementById("fallingstar10").setAttribute("style", "position: relative;top: 25%; right: -92%;rotate: 45deg");
-            document.getElementById("fallingstar11").setAttribute("style", "position: relative;top: -160%; right: 5%;rotate: -45deg");
-            document.getElementById("fallingstar4").setAttribute("style", "position: relative;top: -150%; right: 110%;rotate: -135deg");
-            document.getElementById("fallingstar5").setAttribute("style", "position: relative;top: -125%; right: 7%;rotate: 135deg");
             document.getElementById("fallingstar10").setAttribute("src", " https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("fallingstar11").setAttribute("src", " https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("fallingstar4").setAttribute("src", " https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("fallingstar5").setAttribute("src", " https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
+            document.getElementById("fallingstar10").setAttribute("style", "position: relative;top: 25%; right: -92%;rotate: 45deg");
+            document.getElementById("fallingstar11").setAttribute("style", "position: relative;top: -160%; right: 5%;rotate: -45deg");
+            document.getElementById("fallingstar4").setAttribute("style", "position: relative;top: -150%; right: 110%;rotate: -135deg");
+            document.getElementById("fallingstar5").setAttribute("style", "position: relative;top: -125%; right: 7%;rotate: 135deg");
             document.getElementById("moon1-header").setAttribute("style", "display: none");
         });
     }
 
     function AboutMeStarLeave() {
         window.requestAnimationFrame(function () {
-                document.getElementById("fallingstar10").setAttribute("style", "position: fixed;top: 0%; right: 48%; rotate: 0deg");
-                document.getElementById("fallingstar11").setAttribute("style", "position: fixed;top: 13%; right: 90%;rotate: 0deg");
-                document.getElementById("fallingstar4").setAttribute("style", "position: fixed;top: 70%; right: 80%;rotate: 0deg");
-                document.getElementById("fallingstar5").setAttribute("style", "position: fixed;top: 37%; right: 63%;rotate: 0deg");
                 document.getElementById("fallingstar10").setAttribute("src", " https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-200-t.gif");
                 document.getElementById("fallingstar11").setAttribute("src", " https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-100-t.gif");
                 document.getElementById("fallingstar4").setAttribute("src", " https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-300-t.gif");
                 document.getElementById("fallingstar5").setAttribute("src", " https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-300-t.gif");
+                document.getElementById("fallingstar10").setAttribute("style", "position: fixed;top: 0%; right: 48%; rotate: 0deg");
+                document.getElementById("fallingstar11").setAttribute("style", "position: fixed;top: 13%; right: 90%;rotate: 0deg");
+                document.getElementById("fallingstar4").setAttribute("style", "position: fixed;top: 70%; right: 80%;rotate: 0deg");
+                document.getElementById("fallingstar5").setAttribute("style", "position: fixed;top: 37%; right: 63%;rotate: 0deg");
                 document.getElementById("moon1-header").setAttribute("style", "display: relative");
             }
         );
@@ -135,30 +136,30 @@ function App() {
 
     function ResumeStarHover() {
         window.requestAnimationFrame(function () {
+            document.getElementById("fallingstar12").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
+            document.getElementById("fallingstar13").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
+            document.getElementById("fallingstar3").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
+            document.getElementById("fallingstar16").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("fallingstar12").setAttribute("style", "position: relative;top: 25%; right: -90%;rotate: 45deg");
             document.getElementById("fallingstar13").setAttribute("style", "position: relative;top: -165%; right: 6%;rotate: -45deg");
             document.getElementById("fallingstar16").setAttribute("style", "position: relative;top: -150%; right: 110%;rotate: -135deg");
             document.getElementById("fallingstar3").setAttribute("style", "position: relative;top: -130%; right: 10%;rotate: 135deg");
             document.getElementById("fallingstar4").setAttribute("style", "display: none");
-            document.getElementById("fallingstar12").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
-            document.getElementById("fallingstar13").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
-            document.getElementById("fallingstar3").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
-            document.getElementById("fallingstar16").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("moon3-header").setAttribute("style", "display: none");
         });
     }
 
     function ResumeStarLeave() {
         window.requestAnimationFrame(function () {
+            document.getElementById("fallingstar12").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-100-t.gif");
+            document.getElementById("fallingstar13").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-200-t.gif");
+            document.getElementById("fallingstar16").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-300-t.gif");
+            document.getElementById("fallingstar3").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-300-t.gif");
             document.getElementById("fallingstar12").setAttribute("style", "position: fixed;top: 78%; right: 61%;rotate: 0deg");
             document.getElementById("fallingstar13").setAttribute("style", "position: fixed;top: 31%; right: 69%;rotate: 0deg");
             document.getElementById("fallingstar16").setAttribute("style", "position: fixed;top: 70%; right: 90%;rotate: 0deg");
             document.getElementById("fallingstar3").setAttribute("style", "position: fixed;top: 90%; right: 58%;rotate: 0deg");
             document.getElementById("fallingstar4").setAttribute("style", "display: block");
-            document.getElementById("fallingstar12").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-100-t.gif");
-            document.getElementById("fallingstar13").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-200-t.gif");
-            document.getElementById("fallingstar16").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-300-t.gif");
-            document.getElementById("fallingstar3").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-300-t.gif");
             document.getElementById("moon3-header").setAttribute("style", "display: relative");
         });
     }
@@ -166,56 +167,56 @@ function App() {
 
     function ContactMeStarHover() {
         window.requestAnimationFrame(function () {
-            document.getElementById("fallingstar17").setAttribute("style", "position: relative;top: 25%; right: -120%;rotate: 45deg");
-            document.getElementById("fallingstar6").setAttribute("style", "position: relative;top: -160%; right: -25%;rotate: -45deg");
-            document.getElementById("fallingstar2").setAttribute("style", "position: relative;top: -150%; right: 70%;rotate: -135deg");
-            document.getElementById("fallingstar7").setAttribute("style", "position: relative;top: -130%; right: -22%;rotate: 135deg");
             document.getElementById("fallingstar17").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("fallingstar6").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("fallingstar2").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("fallingstar7").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
+            document.getElementById("fallingstar17").setAttribute("style", "position: relative;top: 25%; right: -120%;rotate: 45deg");
+            document.getElementById("fallingstar6").setAttribute("style", "position: relative;top: -160%; right: -25%;rotate: -45deg");
+            document.getElementById("fallingstar2").setAttribute("style", "position: relative;top: -150%; right: 70%;rotate: -135deg");
+            document.getElementById("fallingstar7").setAttribute("style", "position: relative;top: -130%; right: -22%;rotate: 135deg");
             document.getElementById("moon4-header").setAttribute("style", "display: none");
         });
     }
 
     function ContactMeStarLeave() {
         window.requestAnimationFrame(function () {
-            document.getElementById("fallingstar17").setAttribute("style", "position: fixed; top: 90%; right: 5%;rotate: 0deg");
-            document.getElementById("fallingstar6").setAttribute("style", "position: fixed; top: 48%; right: 40%;rotate: 0deg");
-            document.getElementById("fallingstar2").setAttribute("style", "position: fixed; top: 80%; right: 48%;rotate: 0deg");
-            document.getElementById("fallingstar7").setAttribute("style", "position: fixed; top: 81%; right: 33%;rotate: 0deg");
             document.getElementById("fallingstar17").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-200-t.gif");
             document.getElementById("fallingstar6").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-300-t.gif");
             document.getElementById("fallingstar2").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-100-t.gif");
             document.getElementById("fallingstar7").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-100-t.gif");
+            document.getElementById("fallingstar17").setAttribute("style", "position: fixed; top: 90%; right: 5%;rotate: 0deg");
+            document.getElementById("fallingstar6").setAttribute("style", "position: fixed; top: 48%; right: 40%;rotate: 0deg");
+            document.getElementById("fallingstar2").setAttribute("style", "position: fixed; top: 80%; right: 48%;rotate: 0deg");
+            document.getElementById("fallingstar7").setAttribute("style", "position: fixed; top: 81%; right: 33%;rotate: 0deg");
             document.getElementById("moon4-header").setAttribute("style", "display: relative");
         });
     }
 
     function MiscStarHover() {
         window.requestAnimationFrame(function () {
-            document.getElementById("fallingstar18").setAttribute("style", "position: relative; top: -145%; right: -110%;rotate: 45deg");
-            document.getElementById("fallingstar14").setAttribute("style", "position: relative; top: -150%; right: -28%;rotate: -45deg");
-            document.getElementById("fallingstar1").setAttribute("style", "position: relative; top: 20%; right: 70%;rotate: -135deg");
-            document.getElementById("fallingstar8").setAttribute("style", "position: relative; top: -135%; right: -20%;rotate: 135deg");
             document.getElementById("fallingstar18").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("fallingstar14").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("fallingstar1").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
             document.getElementById("fallingstar8").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-t.gif");
+            document.getElementById("fallingstar18").setAttribute("style", "position: relative; top: -145%; right: -110%;rotate: 45deg");
+            document.getElementById("fallingstar14").setAttribute("style", "position: relative; top: -150%; right: -28%;rotate: -45deg");
+            document.getElementById("fallingstar1").setAttribute("style", "position: relative; top: 20%; right: 70%;rotate: -135deg");
+            document.getElementById("fallingstar8").setAttribute("style", "position: relative; top: -135%; right: -20%;rotate: 135deg");
             document.getElementById("moon2-header").setAttribute("style", "display: none");
         });
     }
 
     function MiscStarLeave() {
         window.requestAnimationFrame(function () {
-            document.getElementById("fallingstar18").setAttribute("style", "display:fixed; top: 50%; right: 15%;rotate: 0deg");
-            document.getElementById("fallingstar14").setAttribute("style", "display:fixed;top: 15%; right: 15%;rotate: 0deg");
-            document.getElementById("fallingstar1").setAttribute("style", "display:fixed;top: 5%; right: 20%;rotate: 0deg");
-            document.getElementById("fallingstar8").setAttribute("style", "display:fixed;top: 38%; right: 70%;rotate: 0deg");
             document.getElementById("fallingstar18").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-400-t.gif");
             document.getElementById("fallingstar14").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-300-t.gif");
             document.getElementById("fallingstar1").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-200-t.gif");
             document.getElementById("fallingstar8").setAttribute("src", "https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-200-t.gif");
+            document.getElementById("fallingstar18").setAttribute("style", "display:fixed; top: 50%; right: 15%;rotate: 0deg");
+            document.getElementById("fallingstar14").setAttribute("style", "display:fixed;top: 15%; right: 15%;rotate: 0deg");
+            document.getElementById("fallingstar1").setAttribute("style", "display:fixed;top: 5%; right: 20%;rotate: 0deg");
+            document.getElementById("fallingstar8").setAttribute("style", "display:fixed;top: 38%; right: 70%;rotate: 0deg");
             document.getElementById("moon2-header").setAttribute("style", "display: relative");
         });
     }
@@ -227,7 +228,9 @@ function App() {
             </div>
 
 
-            <object id="resumePDF" className="resumePDF" data="https://drive.google.com/file/d/14yqH8EIEAFAlhCS4bJJA17P_R5xm_bth/preview" type="application/pdf">   </object>
+            <object id="resumePDF" className="resumePDF"
+                    data="https://drive.google.com/file/d/14yqH8EIEAFAlhCS4bJJA17P_R5xm_bth/preview"
+                    type="application/pdf"></object>
 
 
             <img id="fallingstar9" className="fallingstar9 transition3"
