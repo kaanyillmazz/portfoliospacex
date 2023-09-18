@@ -6,7 +6,7 @@
 }
 
 .resumePDF {
-    transition: all 2s;
+    transition: all 1.5s;
     display: none;
     position: fixed;
     top: 5%;
