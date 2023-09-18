@@ -17,7 +17,7 @@
     display: none;
     position: fixed;
     top: 5%;
-    left: 0%;
+    left: 0;
     z-index: 1;
     opacity: 90%;
     width: 100vw;
@@ -66,17 +66,18 @@
     position: fixed;
     left: 8%;
     bottom: 70%;
-    height: 150px;
-    width: 150px;
+    height: 40px;
+    width: 40px;
 
 }
 .moon1-header {
     font-family: ThaleahFat;
     color: aliceblue;
     font-size: 15px;
+    text-align: center;
     position: relative;
-    top: 101%;
-    left: -5%;
+    top: 115%;
+    left: 0;
 }
 
 
@@ -112,17 +113,19 @@
     position: fixed;
     right: 8%;
     bottom: 60%;
-    height: 150px;
-    width: 150px;
+    height: 40px;
+    width: 40px;
 
 }
 .moon2-header {
     font-family: ThaleahFat;
     color: aliceblue;
     font-size: 15px;
+    text-align: center;
+
     position: relative;
     bottom: -102%;
-    left: 54%;
+    left: -70%;
 }
 
 .moon3 {
@@ -142,16 +145,17 @@
     position: fixed;
     left: 20%;
     bottom: 20%;
-    height: 150px;
-    width: 150px;
+    height: 40px;
+    width: 40px;
 
 }
 .moon3-header {
     font-family: ThaleahFat;
     color: aliceblue;
     font-size: 15px;
+    text-align: center;
     position: relative;
-    top: 102%;
+    top: 95%;
     left: -1%;
 }
 
@@ -172,17 +176,18 @@
     position: fixed;
     right: 31%;
     bottom: 10%;
-    height: 150px;
-    width: 150px;
+    height: 40px;
+    width: 40px;
 
 }
 .moon4-header {
     font-family: ThaleahFat;
     color: aliceblue;
+    text-align: center;
     font-size: 15px;
     position: relative;
     top: 102%;
-    left: 64%;
+    left: -10%;
 }
 
 .animate-spin {
@@ -235,6 +240,10 @@
     right: 10%;
     bottom: 6%;
     z-index: 5;
+}
+
+.flame-transition {
+    display: none;
 }
 
 
@@ -334,7 +343,7 @@
     font-family: Monogram;
     color: aliceblue;
     font-size: 20px;
-    overflow: scroll;
+    overflow: visible;
 }
 
 .fallingstar {
@@ -411,7 +420,7 @@
 
 .fallingstar10 {
     position: fixed;
-    top: 0%;
+    top: 0;
     right: 48%;
     display: none;
 }
