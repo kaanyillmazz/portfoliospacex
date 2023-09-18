@@ -1,8 +1,49 @@
 import {Button} from "@mui/joy";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 
 function App() {
+    let mouseXY = {};
+    document.addEventListener("mousemove", function (event) {
+        mouseXY.X = event.pageX;
+        mouseXY.Y = event.pageY;
+    });
+
+    useEffect(() => {
+        let flameElement = document.getElementById("torotate");
+        let prevXY = {X: null, Y: null};
+
+        setInterval(function () {
+            // eslint-disable-next-line no-mixed-operators
+            if (prevXY.Y !== mouseXY.Y || prevXY.X !== mouseXY.X && (prevXY.Y != null || prevXY.X != null)) {
+                let cowXY = {left: flameElement.x, top: flameElement.y};
+                let diffX = cowXY.left - mouseXY.X;
+                let diffY = cowXY.top - mouseXY.Y;
+                let tan = diffY / diffX;
+                let atan = Math.atan(tan) * 180 / Math.PI;
+
+                if (diffY > 0 && diffX > 0) {
+
+                    atan += 180;
+                } else if (diffY < 0 && diffX > 0) {
+
+                    atan -= 180;
+                }
+                prevXY.X = mouseXY.X;
+                prevXY.Y = mouseXY.Y;
+                let windowY = window.innerHeight
+                let windowX = window.innerWidth;
+                let percentY = 100 * (mouseXY.Y / windowY).toFixed(2);
+                let percentX = 100 * (mouseXY.X / windowX).toFixed(2);
+                let offsetY = percentY + 4;
+                let offsetX = percentX;
+                let offsetDeg = atan - 90;
+
+                flameElement.setAttribute("style", `position: fixed; left: ${offsetX}%; top: ${offsetY}%; transform: rotate(${offsetDeg}deg)`);
+            }
+        }, 10);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     const [resumeOpen, setResumeOpen] = useState(false);
 
@@ -14,7 +55,6 @@ function App() {
             document.getElementById("resumePDF").setAttribute("style", "display: none");
             setResumeOpen(!resumeOpen);
         }
-
 
         document.getElementById("kaanyilmaz").classList.add("opacityZero");
 
@@ -222,16 +262,20 @@ function App() {
     }
 
     return (
-        <div  className="Main">
+        <div className="Main">
+
+            <img id="torotate" className="flame-transition" alt="starship flame"
+                 src="https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/flames-slowed-t-cropped.gif"
+                 height="32px" width="32px" style={{position: "fixed"}}/>
+
             <div id="profilePic" className="profilePic displayNone">
                 <img className="profilePic" src="https://i.imgur.com/aOmiDeB.png" alt="user profile"/>
             </div>
 
-
             <object id="resumePDF" className="resumePDF"
                     data="https://drive.google.com/file/d/14yqH8EIEAFAlhCS4bJJA17P_R5xm_bth/preview"
-                    type="application/pdf">Resume PDF</object>
-
+                    type="application/pdf">Resume PDF
+            </object>
 
             <img id="fallingstar9" className="fallingstar9 transition3"
                  src="https://raw.githubusercontent.com/kaanyillmazz/portfoliospacex/master/assets/images/starfall-750-t.gif"
@@ -303,12 +347,13 @@ function App() {
                 </div>
             </div>
 
-
             <div id="kaanyilmaz" className="kaanyilmaz transition3">
                 <label className="kaanyilmaz">Kaan YILMAZ</label>
             </div>
 
-            <div   className="starsBackground"></div>
+            <div className="starsBackground">
+
+            </div>
 
             <div className="row">
                 <div className="col-md-12">
@@ -323,7 +368,6 @@ function App() {
                         You can reach me from my linkedin profile.</label>
                 </div>
             </div>
-
 
             <div id="moon1-container" className="moon1-container transition">
                 <img id="fallingstar10" className="fallingstar10 transition3"
@@ -442,9 +486,7 @@ function App() {
                 </div>
                 <label id="moon4-header" className="moon4-header">Contact Me</label>
             </div>
-
         </div>
-
     );
 }
 

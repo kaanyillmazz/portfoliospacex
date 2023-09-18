@@ -46,6 +46,10 @@ body{
     height: 100px;
 }
 
+.flame-transition {
+    transition: all 10ms;
+}
+
 .displayNone {
     display: none;
 }
