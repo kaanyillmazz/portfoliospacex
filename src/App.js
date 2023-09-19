@@ -16,32 +16,28 @@ function App() {
         setInterval(function () {
             //we may need to reuse check if prev x equals mouse x etc
             // eslint-disable-next-line no-mixed-operators
-            if (prevXY.Y != null || prevXY.X != null) {
-                let cowXY = {left: flameElement.x, top: flameElement.y};
-                let diffX = cowXY.left - mouseXY.X;
-                let diffY = cowXY.top - mouseXY.Y;
-                let tan = diffY / diffX;
-                let atan = Math.atan(tan) * 180 / Math.PI;
+            let cowXY = {left: flameElement.x, top: flameElement.y};
+            let diffX = cowXY.left - mouseXY.X;
+            let diffY = cowXY.top - mouseXY.Y;
+            let tan = diffY / diffX;
+            let atan = Math.atan(tan) * 180 / Math.PI;
+            if (diffY > 0 && diffX > 0) {
 
-                if (diffY > 0 && diffX > 0) {
+                atan += 180;
+            } else if (diffY < 0 && diffX > 0) {
 
-                    atan += 180;
-                } else if (diffY < 0 && diffX > 0) {
-
-                    atan -= 180;
-                }
-                prevXY.X = mouseXY.X;
-                prevXY.Y = mouseXY.Y;
-                let windowY = window.innerHeight
-                let windowX = window.innerWidth;
-                let percentY = 100 * (mouseXY.Y / windowY).toFixed(2);
-                let percentX = 100 * (mouseXY.X / windowX).toFixed(2);
-                let offsetY = percentY + 4;
-                let offsetX = percentX;
-                let offsetDeg = atan - 90;
-
-                flameElement.setAttribute("style", `position: fixed; left: ${offsetX}%; top: ${offsetY}%; transform: rotate(${offsetDeg}deg)`);
+                atan -= 180;
             }
+            prevXY.X = mouseXY.X;
+            prevXY.Y = mouseXY.Y;
+            let windowY = window.innerHeight
+            let windowX = window.innerWidth;
+            let percentY = 100 * (mouseXY.Y / windowY).toFixed(2);
+            let percentX = 100 * (mouseXY.X / windowX).toFixed(2);
+            let offsetY = percentY + 4;
+            let offsetX = percentX;
+            let offsetDeg = atan - 90;
+            flameElement.setAttribute("style", `position: fixed; left: ${offsetX}%; top: ${offsetY}%; transform: rotate(${offsetDeg}deg)`);
         }, 50);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
