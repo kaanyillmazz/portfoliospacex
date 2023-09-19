@@ -47,7 +47,7 @@ body{
 }
 
 .flame-transition {
-    transition: all 10ms;
+    transition: all 70ms;
 }
 
 .displayNone {
@@ -448,7 +448,7 @@ body{
 
 .fallingstar10 {
     position: fixed;
-    top: 0%;
+    top: 0;
     right: 48%;
 
 }

@@ -14,8 +14,9 @@ function App() {
         let prevXY = {X: null, Y: null};
 
         setInterval(function () {
+            //we may need to reuse check if prev x equals mouse x etc
             // eslint-disable-next-line no-mixed-operators
-            if (prevXY.Y !== mouseXY.Y || prevXY.X !== mouseXY.X && (prevXY.Y != null || prevXY.X != null)) {
+            if (prevXY.Y != null || prevXY.X != null) {
                 let cowXY = {left: flameElement.x, top: flameElement.y};
                 let diffX = cowXY.left - mouseXY.X;
                 let diffY = cowXY.top - mouseXY.Y;
@@ -41,7 +42,7 @@ function App() {
 
                 flameElement.setAttribute("style", `position: fixed; left: ${offsetX}%; top: ${offsetY}%; transform: rotate(${offsetDeg}deg)`);
             }
-        }, 10);
+        }, 50);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
