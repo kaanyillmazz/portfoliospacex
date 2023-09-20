@@ -297,7 +297,7 @@ function App() {
                         size="md"
                         variant="plain"
                         startDecorator={<img style={{width: 15, height: 15}}
-                                             src="https://www.unipile.com/wp-content/uploads/2022/09/logo_instagram.png"
+                                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png"
                                              alt="user"/>}
                     >Instagram</Button>
 
@@ -317,7 +317,7 @@ function App() {
                         size="md"
                         variant="plain"
                         startDecorator={<img style={{width: 15, height: 15}}
-                                             src="https://www.unipile.com/wp-content/uploads/2022/09/logo-linkedin-1.png"
+                                             src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
                                              alt="user"/>}
                     >LinkedIn</Button>
 
