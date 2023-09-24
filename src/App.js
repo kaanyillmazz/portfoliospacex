@@ -270,7 +270,7 @@ function App() {
             </div>
 
             <object id="resumePDF" className="resumePDF"
-                    data="https://drive.google.com/file/d/14yqH8EIEAFAlhCS4bJJA17P_R5xm_bth/preview"
+                    data="https://drive.google.com/file/d/1Ma3zmsEdcDajQJrOkkSyJ3dm6mu3Wf5H/view?usp=sharing"
                     type="application/pdf">Resume PDF
             </object>
 
